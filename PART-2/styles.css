@@ -1,0 +1,23 @@
+#this-is-id {
+    background-color: red;
+}
+
+.bg-red {
+    background-color: green;
+}
+.f30 {
+    font-size: 30px;
+}
+.class-1 {
+    display: inline;
+    border: 1px solid black;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0.5;
+}
+
+.tableName {
+    font-size: 12px;
+    margin: 2px;
+}

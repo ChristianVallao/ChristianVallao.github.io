@@ -1,0 +1,3 @@
+THIS IS HTML (index.html)
+with CSS (styles.css)
+no Flexbox styling
