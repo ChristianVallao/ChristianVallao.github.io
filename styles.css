@@ -106,7 +106,7 @@ section {
 
 .home {
     width: auto;
-    max-width: 97%;
+    max-width: auto;
     position: relative;
     background-color: white;
     display: flex;
@@ -153,7 +153,6 @@ section {
 
 .home-content p {
     margin-left: 5%;
-    margin-right: 5%;
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
