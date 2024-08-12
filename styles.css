@@ -99,7 +99,7 @@ section {
 
 .home {
     width: auto;
-    max-width: 90%;
+    max-width: auto;
     position: relative;
     background-color: white;
     display: flex;
@@ -113,27 +113,28 @@ section {
 .home-content h5 {
     font-size: 1.5rem;
     font-weight: 650;
-    margin: auto;
+    margin-left: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 
 }
 .home-content h1 {
     color: white;
     font-size: 5.6rem;
     font-weight: 700;
-    margin: auto;
+    margin-left: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-content h2 {
     color: rgb(255, 255, 255);
     font-size: 3.5rem;
-    margin: auto;
+    margin-left: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-content p {
-    margin: 5px;
+    margin-left: 5%;
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
