@@ -79,6 +79,13 @@ img {
     
 }
 
+img:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #f00000, 
+    -40px 0 100px #57f82593;
+    transition: 1s ;
+}
+
 @keyframes floatImage{
     0% {
         transform: translateY(0);
@@ -99,7 +106,7 @@ section {
 
 .home {
     width: auto;
-    max-width: auto;
+    max-width: 97%;
     position: relative;
     background-color: white;
     display: flex;
@@ -110,12 +117,20 @@ section {
     border-radius: 2%;
 }
 
+.home:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #ff9595, 
+    -40px 0 100px #ffbaba93;
+    transition: 1s ;
+}
+
+
 .home-content h5 {
     font-size: 1.5rem;
     font-weight: 650;
     margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 
 }
 .home-content h1 {
@@ -123,18 +138,22 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
 }
 
 .home-content h2 {
     color: rgb(255, 255, 255);
     font-size: 3.5rem;
     margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-content p {
     margin-left: 5%;
+    margin-right: 5%;
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
