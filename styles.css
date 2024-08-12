@@ -1,0 +1,156 @@
+:root{
+    --white: #fff;
+    --toggleDarkBg: #232841;
+    --darkBg: #000000; 
+    --toggleShadow:inset 0 -5px 15px rgba(0,0,0,0.4),
+    inset 0 5px 15px rgba(255,255,255,0.4);
+    --darkmodeShadow: inset 0 5px 15px rgba(0,0,0,0.4),
+    inset 0 5px 15px rgba(0,0,0,0.4);
+    --wrapperShadow:(0,0,0,0.4);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, #000000b0, #6d0000);
+    transition: 1s;
+}
+
+
+.changeTheme {
+    width: 30px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 100px;
+    box-shadow: var(--wrapperShadow);
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+input {
+    visibility: hidden;
+}
+
+.changeTheme::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 15px;
+    box-shadow: var(--toggleShadow);
+    transition: 0.3s ease-in-out;
+}
+
+.changeTheme:has(input:checked)::before{
+    left: calc(100% - 30px);
+    background-color: var(--toggleDarkBg);
+    box-shadow: var(--darkmodeShadow);
+}
+
+body:has(input[name="changeTheme"]:checked) {
+    background-color: var(--darkBg);
+    transition: 1s;
+}
+   
+
+.changeTheme:has(input[name="changeTheme"]:checked){
+    box-shadow: var(--darkmodeShadow);
+}
+
+
+img {
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    width: 10vw;
+    animation: floatImage 3s ease-in-out infinite;
+    border-radius: 50%;
+    
+}
+
+@keyframes floatImage{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0.8rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+section {
+    max-height: 100vh;
+    width: 100%;
+    padding: 2rem 5% 2rem;
+}
+
+.home {
+    width: auto;
+    max-width: 90%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+}
+
+.home-content h5 {
+    font-size: 1.5rem;
+    font-weight: 650;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.home-content h1 {
+    color: white;
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-content h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-content p {
+    margin: 5px;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.japanese {
+    color: white;
+    font-weight: 500px;
+}
+
+.glow {
+        -webkit-animation: glow 0.8s ease-in-out infinite alternate;
+        -moz-animation: glow 0.8s ease-in-out infinite alternate;
+        animation: glow 0.8s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow {
+        from {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #6d0000, 0 0 20px #6d0000, 0 0 25px #6d0000, 0 0 30px #6d0000, 0 0 35px #6d0000;}
+        to {text-shadow: 0 0 10px #fff, 0 0 15px #9e7d7d93, 0 0 20px #9e7d7d93, 0 0 25px #9e7d7d93, 0 0 30px #9e7d7d93, 0 0 35px #9e7d7d93, 0 0 40px #9e7d7d93;}
+      }
+
